@@ -1,10 +1,10 @@
 # Github para Periodistas
 
-Meta de hoy: Aprenderás a usar Github para crear tu sitio web, para administrar desde tu computador tus proyectos de sitios web usando Github Desktop y a publicarlos en la web. También aprenderás el "lingo" de Github, necesario para usarlo. 
+Meta de hoy: Aprenderás a usar Github para crear tu sitio web, para administrar desde tu computador tus proyectos de sitios web usando Github Desktop y a publicarlos en la web. También aprenderás el "lingo" de Github, necesario para usarlo.
 
 ## 1. Creáte una cuenta en Github
 
-Como ya dijimos [Github](https://www.github.com/) es el equivalente a un Dropbox para proyectos de código, datos y web. Permite mantener una versión de tu proyecto en tu computador (local) y otra en Github (en sus servidores: "la nube") para sincronizar cambios y mantener un registro de todos los cambios del proyecto. Así si te equivocas **puedes volver atrás**. Github está construido sobre [Git,](http://git-scm.com/) un sistema de control de versiones usado por programadores. Pero como es un poco complicado al principio, iremos por el camino fácil. 
+Como ya dijimos [Github](https://www.github.com/) es el equivalente a un Dropbox para proyectos de código, datos y web. Permite mantener una versión de tu proyecto en tu computador (local) y otra en Github (en sus servidores: "la nube") para sincronizar cambios y mantener un registro de todos los cambios del proyecto. Así si te equivocas **puedes volver atrás**. Github está construido sobre [Git,](http://git-scm.com/) un sistema de control de versiones usado por programadores. Pero como es un poco complicado al principio, iremos por el camino fácil.
 
 Ok. Partamos.
 
@@ -24,7 +24,7 @@ Una vez registrado verás una pantalla igual o similar a la que se ve acá abajo
 
 ## 3. Nombra tu repositorio
 
-1. Nombra tu repositorio en minúsculas, sin espacios ni símbolos extraños. 
+1. Nombra tu repositorio en minúsculas, sin espacios ni símbolos extraños.
 1. Incluye una descripción breve.
 1. Define si el repositorio será público o privado.
 1. Haz check en la caja de "Initialize this repository with a README"
@@ -34,9 +34,9 @@ Una vez registrado verás una pantalla igual o similar a la que se ve acá abajo
 
 [3]: images/githubparaperiodistas/3-nombra-tu-repositorio.png
 
-## ¡Voilá! Ya tienes tu primer repositorio. 
+## ¡Voilá! Ya tienes tu primer repositorio.
 
-Lo vas a copiar a tu computador. Antes, anda a tu computador y lee el siguiente paso. 
+Lo vas a copiar a tu computador. Antes, anda a tu computador y lee el siguiente paso.
 
 ![][4]
 
@@ -44,9 +44,9 @@ Lo vas a copiar a tu computador. Antes, anda a tu computador y lee el siguiente 
 
 ## 4. Crea una carpeta dónde guardarás todos tus repositorios
 
-Realizar proyectos digitales requiere que seas ordenado y definas dónde guardarás este y otros proyectos. En mi caso, tengo una carpeta madre en la cual guardo todos los repositorios de clases y otros proyectos. La llamo para no olvidarme: **repos.** 
+Realizar proyectos digitales requiere que seas ordenado y definas dónde guardarás este y otros proyectos. En mi caso, tengo una carpeta madre en la cual guardo todos los repositorios de clases y otros proyectos. La llamo para no olvidarme: **repos.**
 
-1. Crea tu carpeta **repos **así todos sabremos siempre dónde tienes tus repositorios y no lo olvidarás 
+1. Crea tu carpeta **repos **así todos sabremos siempre dónde tienes tus repositorios y no lo olvidarás
 1. Cuando copies tu repositorio desde Github a tu computador, guarda el repositorio dentro de** repos.**
 
 ![][5]
@@ -55,9 +55,9 @@ Realizar proyectos digitales requiere que seas ordenado y definas dónde guardar
 
 ## 5. Instalar Github Desktop en tu computador
 
-¿Recuerdas cuando aprendiste a usar una aplicación de subida de archivos a servidor vía FTP como [File Zilla](https://filezilla-project.org/) para publicar tu sitio web? 
+¿Recuerdas cuando aprendiste a usar una aplicación de subida de archivos a servidor vía FTP como [File Zilla](https://filezilla-project.org/) para publicar tu sitio web?
 
-Bueno [Github Desktop](https://desktop.github.com/) sirve el mismo propósito en Github. Es la herramienta más rápida y fácil de comenzar a trabajar con repositorios para subirlos y bajarlos de los servidores de Github. 
+Bueno [Github Desktop](https://desktop.github.com/) sirve el mismo propósito en Github. Es la herramienta más rápida y fácil de comenzar a trabajar con repositorios para subirlos y bajarlos de los servidores de Github.
 
 1. Descarga [Github Desktop](https://desktop.github.com/) e instálalo. Muévelo a tu carpeta de Aplicaciones o Applications.
 1. Haz click sobre el ícono de Github Desktop (el [octogato](https://octodex.github.com/)) y cuando se abra la aplicación, anda al menú superior izquierdo y pulsa sobre Preferencias o **Preferences**.
@@ -82,7 +82,7 @@ Bueno [Github Desktop](https://desktop.github.com/) sirve el mismo propósito en
 
 ## 7. Clona (copia) tu repositorio a tu computador con Github Desktop
 
-1. En la barra lateral izquierda de Github Desktop debieras ver en la lista de repositorios el repositorio que creaste. 
+1. En la barra lateral izquierda de Github Desktop debieras ver en la lista de repositorios el repositorio que creaste.
 1. Si no lo ves, como es mi caso, sigue los pasos que se ven en la imagen de abajo y haz click en "Clone micasa"
 
 *Si tienes dudas, más adelante revisa las *[*guías de ayuda*](https://help.github.com/desktop/)* de la aplicación.*
@@ -93,7 +93,7 @@ Bueno [Github Desktop](https://desktop.github.com/) sirve el mismo propósito en
 
 ## 8. Guarda el repositorio clonado en tu carpeta repos
 
-Al **clonar **y guardar el repositorio en tu carpeta madre repos lo que estás haciendo es **bajar a tu computador una copia de tu repositorio** que estaba alojado en Github.com. 
+Al **clonar **y guardar el repositorio en tu carpeta madre repos lo que estás haciendo es **bajar a tu computador una copia de tu repositorio** que estaba alojado en Github.com.
 
 ![][9]
 
@@ -101,17 +101,15 @@ Al **clonar **y guardar el repositorio en tu carpeta madre repos lo que estás h
 
 ## 9. Tu primer repositorio y tu primer "Commit"
 
-Git y Github llevan un registro de todos los cambios que haces en tu repositorio (editaste texto, agregaste una foto, etc). 
+Git y Github llevan un registro de todos los cambios que haces en tu repositorio (editaste texto, agregaste una foto, etc).
 
-El objetivo es que tu puedas conocer e identificar todos los cambios importantes que hagas y tener a mano las distintas versiones. Algo así como llevar un registro de cambios de todos los borradores que escribes hasta que tu reportaje es publicado. 
+El objetivo es que tu puedas conocer e identificar todos los cambios importantes que hagas y tener a mano las distintas versiones. Algo así como llevar un registro de cambios de todos los borradores que escribes hasta que tu reportaje es publicado.
 
-Peeeero.. para que te sea fácil identificar los cambios debes contarle a Github que los hiciste y publicarlos. Esto se llama "Commit changes" ("cometer cambios" o hacer cambios). En corto "Commit". 
+Peeeero.. para que te sea fácil identificar los cambios debes contarle a Github que los hiciste y publicarlos. Esto se llama "Commit changes" ("cometer cambios" o hacer cambios). En corto "Commit".
 
-La regla de oro es que hagas commits muy frecuentemente y que expliques brevemente qué cambios hiciste. 
+La regla de oro es que hagas commits muy frecuentemente y que expliques brevemente qué cambios hiciste.
 
-1. Back in the GitHub application, you should see your files in the left column. Make sure they are all checked. If so, enter a message in the text box called “commit summary”, something like “initial commit.” Then, click the commit button.
-
-  Al clonar y guardar el repositorio en tu carpeta madre repos lo que estás haciendo es bajar a tu computador unacopia de tu repositorio alojada en Github.com. 
+Al clonar y guardar el repositorio en tu carpeta madre repos lo que estás haciendo es bajar a tu computador unacopia de tu repositorio alojada en Github.com. 
 
 ![][10]
 
@@ -119,11 +117,11 @@ La regla de oro es que hagas commits muy frecuentemente y que expliques brevemen
 
 ## 10. Crea un index.html, haz tu segundo "Commit" y súbelo a Github
 
-Reitero: La regla de oro es que hagas commits muy frecuentemente y que expliques brevemente qué cambios hiciste. 
+Reitero: La regla de oro es que hagas commits muy frecuentemente y que expliques brevemente qué cambios hiciste.
 
 1. Abre tu repositorio en Sublime, escribe un mensaje tipo (el que quieras), guarda el archivo como index.html dentro del repositorio (carpeta).
-1. Anda a Github Desktop y revisa la parte superior de Commited o Uncommited Changes. ¿Qué ves? 
-1. Haz tu segundo commit. 
+1. Anda a Github Desktop y revisa la parte superior de Commited o Uncommited Changes. ¿Qué ves?
+1. Haz tu segundo commit.
 
 ![][11]
 
@@ -139,7 +137,7 @@ Reitero: La regla de oro es que hagas commits muy frecuentemente y que expliques
 
 ## Ejercicio 1: Crear tu primer sitio web personal en Github
 
-1. Ir a [https://pages.github.com/](https://pages.github.com/) 
+1. Ir a [https://pages.github.com/](https://pages.github.com/)
 1. Haz click en [User or organization site](https://pages.github.com/#user-site)
 1. Anda a [GitHub](https://github.com/) y [crea un nuevo repositorio](https://github.com/new) que se llame **username.github.io**, donde *username* es tu tu nombre de usuario en Github.
 
@@ -179,7 +177,7 @@ Incluye:
 
 ## Resultado: Esta es la página del curso Craft 2 Español
 
-[https://craft2es.github.io/](https://craft2es.github.io/) 
+[https://craft2es.github.io/](https://craft2es.github.io/)
 
 ![][16]
 
@@ -200,6 +198,6 @@ Incluye:
 
 ## Lista de medios recomendados en Github
 
-[https://github.com/showcases/open-journalism](https://github.com/showcases/open-journalism) 
+[https://github.com/showcases/open-journalism](https://github.com/showcases/open-journalism)
 
 **Desafío: **Haz **fork** de los repositorios que te gustan y ve qué pasa.
