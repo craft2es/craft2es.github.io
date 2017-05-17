@@ -89,12 +89,10 @@ section {
   height: 80vh;
 }
 
-
-
 .main-box {
  display: block;
  width: 100%;
- background: url('../images/foto24.JPG');
+ background: url('../images/foto24.jpg');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: top center;
@@ -104,10 +102,10 @@ section {
  .main-video {
  display: block;
  width: 100%;
- background: url('../images/foto21.JPG');
+ background: url('../images/hh.jpg');
  background-size: cover;
  background-repeat: no-repeat;
- background-position: center center;
+ background-position: top center;
  background-attachment: fixed;
  }
 
@@ -342,11 +340,11 @@ margin-bottom: 0;
 /* VIDEO VIMEO */
 
 .videovimeo iframe {
- display: block;
+    display: block;
     width: 960px;
     height: 540px;
-  margin: 50px 150px 50px 150px;
-  padding-top: 60px;
+    margin: 50px 150px 50px 150px;
+    padding-top: 60px;
 
 }
 
