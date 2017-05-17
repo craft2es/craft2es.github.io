@@ -1,119 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--
-    Copyright 2017 Miguel Paz y Luis Trelles, CUNY Graduate School of Journalism.
-    Los contenidos de este sitio web están disponibles bajo licencia Creative Commons de uso bajo Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional. Los requisitos de cumplimiento de la licencia están disponibles en detalle aquí:
-    https://creativecommons.org/licenses/by-nc-nd/4.0/
--->
-  <head>
-<!-- 
-    Meta tags: son textos que los visitantes de tu sitio no pueden ver. Es información para motores de búsqueda, navegadores y redes sociales. Estos leen y toman la información de los Meta tags para los resultados de búsqueda. Explicación detallada en https://en.wikipedia.org/wiki/Meta_element. Muy buenos ejemplos en Mozilla Developer Network https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML 
-    <meta charset="utf-8"> Charset significa character set. Especifíca el tipo de codificación de caracteres para el documento HTML. El usado de manera estándar es UTF-8: codificación de caracteres para Unicode. En simple:  charset UTF-8 soporta la mayoría de idiomas del mundo. Así alguien que tiene un computador con idioma inglés verá tu página web en castellano con todos sus acentos, sin problema.     
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> tag y valor para que el sitio web funcione bien en Internet Explorer 6 al 11. 
-    <title> es el título del documento HTML completo, no su contenido. Es el meta tag que buscadores, navegadores y redes sociales leen y extraen. 
-    <meta name="author" content="Poner aquí nombre de autor"> Pones nombre de autor de documento.
-    <meta name="description" content="Aquí va la descripción de la página o sitio web"> Descripción del contenido de tu página HTML.
-    <meta name="viewport" content="width=device-width, initial-scale=1"> El meta tag "viewport" se refiere al tamaño de la pantalla de dispositivos e indica que tu sitio web o página se adapta al tamaño de la pantalla. Que es "responsive" o está optmizado para móviles. En "content=" indicamos el ancho de pantalla: "width=device-width" y la escala inicial: "initial'scale=1". Width controla el tamaño del viewport. Puedes definir ancho en pixeles o escalas de porcentaje como 90%. Más en http://www.w3schools.com/css/css_rwd_viewport.asp
-    <meta property="og:site_name" content="Craft 2 en Español"/>
-    <meta property="og:title" content="Craft 2 en Español: Curso del Programa Bilingüe de Periodismo. CUNY Graduate School of Journalism">
-    <meta property="og:longTitle" content="Craft 2 en Español es un curso de Periodismo y Reportería avanzada para estudiantes del Programa Bilingüe de CUNY Graduate School of Journalism en Nueva York">
-    <meta property="og:image" content="INCLUIR LINL A IMAGEN EN WEB"/>
-    <meta property="og:description" content="El futuro del Periodismo en Estados Unidos es bilingüe y en el programa de CUNY Graduate School of Journalism te preparamos para ser parte de él."/>
-    <meta name="keywords" content="Periodismo, Syllabus, CUNY Graduate School of Journalism, Periodismo Bilingüe"/>
-    <meta property="og:url" content="AGREGAR LA URL DEL SYLLABUS"/>  
-    <meta property="og:type" content="article"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@cunyjschool"/>    
--->  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>
-    Craft 2 en Español: Curso del Programa Bilingüe de Periodismo en CUNY Graduate School of Journalism.
-    </title>
-    <meta name="author" content="Miguel Paz y Luis Trelles">
-    <meta name="description" content="Syllabus del curso de Craft 2 en Español de Periodismo y Redacción Avanzada de CUNY Graduate School of Journalism">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 
-Hoja de estilo que enlaza a la hoja de estilo en línea de tachyons.io, framework css usado en este proyecto. Si agregamos una hoja de estilo local sería algo como <link rel="stylesheet" href="/css/tachyons.css". Para más tachyons revisa este video tutorial https://vimeo.com/184997431
--->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Craft2 Español">
+    <meta name="keywords" content="Craft2 Español">
+    <meta name="author" content="Estudiantes Craft2 Español">
+    <title>Proyectos finales de Craft2 en Español</title>
+	<link rel="stylesheet" href="css/style.css"> 
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-  </head>
+	<script>
+           jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+                });
 
-<!-- Inicio del Body -->
+            });
+	</script> 
+
+</head>
+
 <body>
-  <header>
-  <article class="vh-60 dt w-100 bg-white-80">
-  <div class="pa4 tc">
-  <!-- Hummingbird icon by Visual Glow at The Noun Project https://thenounproject.com/visualglow/ -->
-  <img
-      src="images/colibri.png" 
-      class="br-100 ba h3 w3 dib" alt="avatar">
-  </div>
-  </article>
-  </header>
-  <article class="vh-100 dt w-100 bg-light-red">
-  <div class="dtc v-mid tc white ph3 ph4-l">
-    <h1 class="f6 f2-m f-subheadline-l fw6 tc">El futuro del periodismo en Estados Unidos es bilingüe</h1>
-  </div>
-</article>
 
-<article class="avenir pb5">
-  <header class="vh-100 bg-light-pink dt w-100">
-    <div 
-      style="background:url(http://mrmrs.io/photos/display.jpg) no-repeat center right;background-size: cover;" 
-      class="dtc v-mid cover ph3 ph4-m ph5-l">
-      <h1 class="f1 f-subheadline-l measure lh-title fw9 tc">Acá lo construimos juntos.</h1>
-    </div>
- </header>
+	<ul id="nav">
+		<li><a href="LINK A INGLES" target="_blank" title="English">
+		<img src="img/english.png" alt="English"></a></li>
 
-<article class="athelas vh-100 dt w-100 bg-dark-pink">
-<div class="pa4 lh-copy">
-  <a class="f6 f2-m f-subheadline-l fw6 tc no-underline bg-animate bg-white hover-bg-light-blue black" href="#0">Bienvenid@s al sitio web del taller de reportería y narración interactiva avanzada de la Maestría de Periodismo de CUNY</a>
-</div>
-</article>
-<article class="code vh-80 dt w-100 bg-lightest-blue tc">
-<div class="pa4 lh-copy">
-<h2 class="f2 ttu tracked black-90">con sus servidores Luis Trelles y Miguel Paz</h5>   
-</div>   
-</article>    
+		<li><a href="LINK A ESPANOL" target="_blank" title="Español">
+		<img src="img/spanish.png" alt="Español"></a></li>
 
- <article class="vh-90 dt w-100 bg-orange">
-  <div class="dtc v-mid tc white ph3 ph4-l">
-    <h1 class="f6 f2-m f-subheadline-l fw6 tc db white link dim" href="#0">Y un grupo...</h1>
-  </div>
-</article>
- 
-<article class="pa3 pa5-ns vh-80 dt w-100 bg-red">
-  <h1 class="f6 f2-m f-subheadline-l fw6 tc db white baskerville">Muy Particular</h1>
-  <p class="tc"><img src="images/2.jpg" class="w-100 f5 measure" alt="lalala"></p>
-  <p class="tc"><img src="images/3.jpg" class="w-100 f5 measure" alt="lalala"></p>
-  <p class="tc"><img src="images/4.jpg" class="w-100 f5 measure" alt="lalala"> </p>
-  <div class="measure db center f5 f4-ns lh-copy">
-  <p class="tc"><iframe class="tc" width="560" height="315" src="https://www.youtube.com/embed/6Nb9feclM_U?ecver=1" frameborder="0" allowfullscreen></iframe></p>
-  <p class="tc"><iframe width="560" height="315" src="https://www.youtube.com/embed/8uBNroiX9sg?ecver=1" frameborder="0" allowfullscreen></iframe></p>
-  <p class="tc"><iframe width="560" height="315" src="https://www.youtube.com/embed/wXGeToe6nmM?ecver=1" frameborder="0" allowfullscreen></iframe></p>
-  <p class="tc"><iframe width="560" height="315" src="https://www.youtube.com/embed/WAryY8IJCw4?ecver=1" frameborder="0" allowfullscreen></iframe>
-   </br>
-</article>
+		<li><a href="#section1" title="Préstamos en la sombra: sueños, dinero y usura en Nueva York" class="scroll">
+		<img src="img/dot1.png" alt="Préstamos en la sombra: sueños, dinero y usura en Nueva York"></a></li>
 
-<article class="avenir pb5">
-  <header class="vh-100 bg-light-pink dt w-100">
-    <div 
-      style="background:url(images/victorfilippov.jpg) no-repeat center right;background-size: cover;" 
-      class="dtc v-mid cover ph3 ph4-m ph5-l">
-      <h1 class="f1 f-subheadline-l measure lh-title fw9 tc">El futuro del periodismo bilingüe en Estados Unidos son ustedes.</h1>
-    </div>
- </header>
- </article>
+	    <li><a href="#section2" title="Iglesias Santuario: La resistencia del Padre Fabián" class="scroll">
+	    <img src="img/dot1.png" alt="Iglesias Santuario: La resistencia del Padre Fabián"></a></li>
 
-<article class="vh-60 dt w-100 bg-white-80">
-  <div class="pa4 tc">
-  <!-- Hummingbird icon by Visual Glow at The Noun Project https://thenounproject.com/visualglow/ -->
-  <img
-      src="images/colibri.png" 
-      class="br-100 ba h3 w3 dib" alt="avatar">
-  </div>
-</article>
+	    <li><a href="#section3" title="Un refugio en la Gran Manzana" class="scroll">
+	    <img src="img/dot1.png" alt="Un refugio en la Gran Manzana"></a></li>
+
+	    <li><a href="#section4" title="Salvando a las jóvenes latinas" class="scroll">
+	    <img src="img/dot1.png" alt="Salvando a las jóvenes latinas"></a></li>
+
+	    <li><a href="#section5" title="¿Dónde jugarán los niños migrantes?" class="scroll">
+	    <img src="img/dot1.png" alt="¿Dónde jugarán los niños migrantes?"></a></li>
+	</ul>
+
+
+
+	<header id="section1">
+		<h1 class="animate fx">Eliminar efecto animado y reemplazar por landing</h1>
+	</header>
+
+
+	<section class="background-fixed img-1" id="section2">
+		<div class="main-content">
+			<img src="img/img1-mobile.png" class="hide">
+			<h3>Préstamos en la sombra: sueños, dinero y usura en Nueva York</h3>
+			<p>Los prestamistas operan en un mercado gris. Dicen que sólo quieren "ayudar". La historia es más compleja. El sueño americano en 36 cuotas. Y 30% de interés.</p>
+			<p>Por Mónica Cordero, Constanza Gallardo y Alma Sacasa</p> 
+		</div>
+	</section>
+
+
+	<section class="background-fixed img-2" id="section3">
+		<div class="main-content">
+			<img src="img/img2-mobile.png" class="hide">
+			<h3>Iglesias Santuario: La resistencia del Padre Fabián</h3>
+			<p>Un sacerdote y su iglesia asumen la custodia legal de menores indocumentados para  darles un estatus legal en Nueva York.</p>
+			<p>Por Lidia Hernández Tapia, Jesenia De Moya C. y Estefanía Hernández</p> 
+		</div>
+	</section>
+
+	<section class="background-fixed img-3" id="section4">
+		<div class="main-content dark">
+			<img src="img/img3-mobile.png" class="hide">
+			<h3>Refugio online ante amenaza laboral a jornaleros migrantes</h3>
+			<p>Jornalero app busca solucionar el problema del robo de salario en la comunidad indocumentada, pero ¿es la tecnología la solución adecuada?.</p>
+			<p>Por Gerardo del Valle y Joaquín Torres</p>
+		</div>
+	</section>
+
+	<section class="background-fixed img-4" id="section5">
+		<div class="main-content">
+			<img src="img/img4-mobile.png" class="hide">
+			<h3>Salvando a las jóvenes latinas</h3>
+			<p>Nuevas iniciativas podrían ayudar a más jóvenes latinas que piensan quitarse la vida en la ciudad de Nueva York.</p>
+			<p>Por Hanaa Tameez, María Camila Montañez y Maritza Villela</p>
+		</div>
+	</section>
+
+<!-- AGREGO NUEVOS SECTIONS -->
+ 	 <section class="background-fixed img-5" id="section6">
+		<div class="main-content">
+			<img src="img/img4-mobile.png" class="hide">
+			<h3>¿Dónde jugarán los niños migrantes?</h3>
+			<p>Nuevas iniciativas podrían ayudar a más jóvenes latinas que piensan quitarse la vida en la ciudad de Nueva York.</p>
+			<p>Por Nicole Acevedo y Julia Sclafani</p>
+		</div>
+	 </section>
+
+	<footer>
+		<p>add footer info</p>
+	</footer>
+
+<!-- CREDIT FOR ICONs 
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
 </body>
 </html>
