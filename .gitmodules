@@ -1,0 +1,15 @@
+[submodule "bella"]
+	path = bella
+	url = https://github.com/craft2es/bella/
+[submodule "chicosinmigrantes"]
+	path = chicosinmigrantes
+	url = https://github.com/craft2es/chicosinmigrantes
+[submodule "bajo-santuario"]
+	path = bajo-santuario
+	url = https://github.com/craft2es/bajo-santuario
+[submodule "jornaleros"]
+	path = jornaleros
+	url = https://github.com/craft2es/jornaleros
+[submodule "suicidios"]
+	path = suicidios
+	url = https://github.com/craft2es/suicidios
