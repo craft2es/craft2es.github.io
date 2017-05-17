@@ -1,0 +1,3 @@
+[submodule "bella"]
+	path = bella
+	url = https://github.com/craft2es/bella/
