@@ -92,7 +92,7 @@ section {
 .main-box {
  display: block;
  width: 100%;
- background: url('../images/foto24.jpg');
+ background: url('../assets/images/foto24.jpg');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: top center;
