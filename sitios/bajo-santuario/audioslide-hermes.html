@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Un padre para Hermes</title>
+
+        <link rel="stylesheet" href="assets/css/reveal.css">
+        <link rel="stylesheet" href="assets/css/audio.css">
+        <script src="assets/js/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="audio">
+            <audio id="entrevista">
+              <source src="assets/audios/hermes_teaser.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="reveal">
+            <div class="slides">
+                <section class="slide-aligned-left" data-background-image="assets/images/HermesSentado.jpg">
+                    <h1>Un padre para <br>Hermes</h1>
+                    <p>La historia del primer joven indocumentado <br>bajo la tutela legal de una iglesia <br>santuario en Nueva York.</p>
+                    <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
+                </section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesPP.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <p>Hermes Espinosa es uno de los 26 jóvenes bajo la tutela del Padre Fabián Arias, el líder de una congregación luterana que es parte del Nuevo Movimiento de Iglesias Santuario.</p>
+                </section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesPE.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesManos2.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <p>“Yo le agradezco mucho a Dios que pasé con mi hermano... Fue un largo camino”.</p>
+                </section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesPM.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesIglesiaSion.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesFabian.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesIglesiaFabian.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesFabianMisa.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <p>“Ojalá podamos hacer 11 millones... Tanta gente que no puede aplicar a estas bendiciones, ¿no?”</p>
+                </section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesPuente.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/HermesTimesSquare.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-image="assets/images/Hermes17.jpg"></section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <p>Con la ayuda de los fieles de Sión y el padre Fabián, Hermes se supera y enfoca en estudiar diseño de moda en el Instituto FIT de Nueva York.</p>
+                </section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <h2>Un padre para Hermes</h2>
+                    <p>Por: Jesenia De Moya C., Estefanía Hernández y Lidia Hernández Tapia</p>
+                    <p>Entrevistados: Hermes Espinosa y Fabián Arias</p>
+                    <p>Editores: Luis Trelles, Miguel Paz, Cristina Maldonado (Investigación) <br>y David Galavotti (Interactivo)</p>
+                    <p>Para la asignatura Craft II del programa de periodismo bilingüe de la <br>Escuela de Periodismo de CUNY</p>
+                    <img src="assets/images/nycns.png"> 
+                    <h6><a href="indexLanding.html">Bajo Santuario</a><a href="video-iglesias-santuario.html">¿Qué son las iglesias santuario?</a><a href="reportaje-adopciones.html">La resistencia del padre Fabián</a></h6>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="assets/js/head.min.js"></script>
+        <script src="assets/js/reveal.js"></script>
+        <script>
+
+
+            $(document).ready(function() {
+
+                // Array para guardar el tiempo en el momento que cambiamos cada slide.
+                // Cada valor en el array esta expresado en segundos acumulados.
+                var tiempoTransicion = [5, 16, 24, 33, 44, 55, 66, 78, 86, 104, 115, 130, 140, 150, 160];
+                // Posición del array tiempoTransicion
+                var marcaActual = 0;
+                // Selecciono el objeto de audio.
+                var entrevista = $('#entrevista');
+                // Extraigo la duración.
+                var duracion = entrevista.prop('duration');
+                // Extraigo la posición actual del audio.
+                var posicion = entrevista.prop('currentTime');
+
+                // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
+                $('#comenzar').on('click', function() {
+                    entrevista.trigger('play');
+                });
+
+                // Listener o evento que detecta si hubo un cambio en slide.
+                Reveal.addEventListener( 'slidechanged', function(event, setTime) {
+
+                    // Si accidentalmente me cambio de slide sin usar el botón comenzar, entonces ejecuto el audio.
+
+                    // Caso contrario, pongo el audio en pausa y lo vuelvo a cero.
+
+                    if (Reveal.getState().indexh === 0) {
+                        entrevista.trigger('pause');
+                        entrevista.prop('currentTime',0);
+                    } else {
+                        entrevista.trigger('play');
+                    }
+
+                });
+
+
+
+                // Función para ejecutar siguiende slide.
+                function cambiarSlide() {
+                    Reveal.next();
+                    marcaActual += 1;
+                }
+
+                // Listener o evento que extrae el tiempo actual del audio.
+                // Sin función actualmente.
+                entrevista.on('timeupdate', function() {
+                    posicion = entrevista.prop('currentTime');
+                    if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
+                        cambiarSlide();
+                    }
+                });
+
+
+
+            });
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: false,
+                controls: false,
+                center: true,
+                progress: false,
+                width: "100%",
+                height: "100%"
+            });
+        </script>
+    </body>
+</html>
