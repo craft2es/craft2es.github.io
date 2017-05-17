@@ -85,7 +85,7 @@ header {
   height: 100%;
 }
 
-
+/* TURN OFF H1
 header h1 {
   font: 45px 'Roboto', Helvetica, sans-serif;
   color: #fff;
@@ -104,6 +104,7 @@ header h1 {
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+----------------------------- */
 
 img.hide{
   display: none;
@@ -153,6 +154,10 @@ img.hide{
 .background-fixed p {
   font-family: "Roboto", Arial, serif;
   font-size: 18px;
+}
+
+.background-fixed.img-0 {
+  background-color: #2dcc70;
 }
 
 .background-fixed.img-1 {
@@ -215,6 +220,10 @@ footer p {
   .background-fixed {
     height:100%;
     padding:0
+}
+
+.background-fixed.img-0 {
+    background-image:url(../img/img-0.jpg)
 }
 
 .background-fixed.img-1 {
@@ -354,8 +363,7 @@ img.hide {
 }
 
 
-/* H1 ANIMATION
--------------------------------------------------*/
+/* H1 ANIMATION. KILL IT.
 
 .animate {
   -webkit-animation-duration: 1s;
@@ -424,3 +432,4 @@ img.hide {
 }
 
 
+------------------------------------------------- */
