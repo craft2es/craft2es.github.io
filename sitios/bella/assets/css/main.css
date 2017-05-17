@@ -89,10 +89,11 @@ section {
   height: 80vh;
 }
 
+
 .main-box {
  display: block;
  width: 100%;
- background: url('assets/images/foto24.jpg');
+ background: url('../images/foto24.JPG');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: top center;
@@ -102,13 +103,12 @@ section {
  .main-video {
  display: block;
  width: 100%;
- background: url('../images/hh.jpg');
+ background: url('../images/foto21.JPG');
  background-size: cover;
  background-repeat: no-repeat;
- background-position: top center;
+ background-position: center center;
  background-attachment: fixed;
- }
-
+}
 
 /* LA BAJADA */
 .bajada {
