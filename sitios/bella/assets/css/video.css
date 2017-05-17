@@ -1,0 +1,135 @@
+/*video.html*/ 
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600|Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700'); 
+
+
+body {
+         font-family: “Roboto”
+         font-weight: 700;
+         font-size: 1em /* esto equivale a 16px */
+         -moz-font-smoothing: grayscale;
+         -webkit-font-smoothing: antialiased;
+} 
+
+
+h1 {
+  font-size: 5.1rem;
+  padding: 0px 10px 0px 10px;
+  margin-top: 230px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+
+
+section {
+  background-color: white;
+} 
+
+.headertop{
+  position: relative;
+  height: 85vh;
+} 
+
+.main-box { 
+ display: block;
+ width: 100%; 
+ background: url('../images/foto24.JPG');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-attachment: fixed;  
+ margin-top: 
+ }
+
+
+
+/* LA BAJADA */ 
+.bajada {
+font-family: 'Roboto', sans-serif;
+font-size: 1.2rem;
+margin-top: -20px;
+color: white;
+padding: 0px 200px 0px 200px;
+text-align: center;
+
+} 
+
+.byline {  
+ font-style: italic;
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-weight: 300;
+color: white;
+
+ }
+
+
+
+
+
+ section iframe {
+ display: block;
+    width: 960px;
+    height: 540px;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-top: -30px; */
+  position: relative; 
+
+
+} 
+
+.texto {
+  padding: 30px 340px 30px 340px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: black;
+  line-height: 20px;
+
+}  
+
+footer{ 
+background-color: white;
+height: 180px; 
+
+ }
+
+ .menu-footer {
+  font-size: 1.5em;
+  padding-top: 20px;
+  color: white; 
+
+ }  
+
+ nav ul{ 
+list-style: none;
+color: white;
+  }
+
+/* unvisited link --- NO FUNCIONO EL COLOR?!?!? */
+a:link {
+    color: #1CB200;
+    
+}
+
+/* visited link */
+a:visited {
+  color: #1CB200;
+  text-decoration: underline;}  
+
+/* selected link */
+ a:active {
+    color: #1CB200;
+        text-decoration: underline;
+} 
+
+/* mouse over link */
+a:hover {
+    color: #1CB200;
+        text-decoration: underline;
+}

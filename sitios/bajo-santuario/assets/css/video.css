@@ -1,0 +1,270 @@
+/*
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+.decoration{
+  margin: -8px;
+  height: 80px;
+  background-color: #ff751a;
+  opacity: 0.8;
+  position: relative;
+  box-shadow: 0px 1px 3px grey;
+}
+
+.navigation{
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #ff751a;
+  opacity: 0.8;
+  box-shadow: 0px 1px 3px grey;
+  z-index: 2;
+}
+
+.navigation a{
+  margin: 0 40px 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.dropCap{
+  font-size: 60px;
+  float: left;
+  padding: 10px 2px;
+  margin: 0;
+}
+
+.text{
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 130%;
+}
+
+.byline {
+  margin: 10px 350px 0;
+  font-weight: bold;
+  opacity: 0.6;
+  font-size: 15px
+}
+
+.quoteBox{
+  padding: 10px;
+  border: 5px;
+}
+
+.quoteRight{
+  font-family: 'Montserrat', sans-serif; color: #ff751a;
+  text-align: right;
+  font-size: 15px;
+  float: right;
+  margin: 10px 120px 50px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 15px 5px;
+}
+
+.quoteLeft{
+  font-family: 'Montserrat', sans-serif; color: #ff751a;
+  text-align: left;
+  font-size: 15px;
+  float: right;
+  margin: 10px 120px 50px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 15px 5px;
+}
+
+.icono {
+  max-width: 50px;
+}
+
+/*body {
+  font-size: 16px;
+  overflow: visible;
+  margin: 20px 80px;
+  padding: 0;
+  max-width: 900px;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #22264b;
+  font-weight: normal;
+  line-height: 0.8em;
+  letter-spacing: -0.002em;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+
+h1 {
+  font-family: 'Playfair', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0px 20px 100px !important;
+  font-size: 3em;
+  text-shadow: none;
+  line-height: 1.3em;
+  padding: 0 100px 0 0;
+}
+
+h2 {
+  font-size: 2.11em;
+  line-height: 1.8em;
+}
+
+h3 {
+  font-size: 1.55em; }
+
+h4 {
+  font-size: 1em;
+}
+
+p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding: 12px 0px;
+}
+
+h1, h2, h3, h4, p, a {
+  width: auto;
+  margin: 0 10%;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+img,
+video,
+iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+strong,
+b {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+ol,
+dl,
+ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
+
+ul ul {
+  list-style-type: square; }
+
+ul ul ul {
+  list-style-type: circle; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  display: block;
+  margin-left: 40px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 40px; }
+
+q,
+blockquote {
+  quotes: none; }
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+blockquote p:first-child,
+blockquote p:last-child {
+  display: inline-block; }
+
+q {
+  font-style: italic; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+a {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 8px;
+
+  color: black;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  transition: all .15s ease; }
+
+a:hover {
+  text-shadow: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/*********************************************
+ * ARTICLE
+ *********************************************/
+
+ .articulo {
+  display: block;
+  width: 100%;
+  background: url('https://images.unsplash.com/photo-1478472190689-fa020c20809a?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=') no-repeat center center fixed;
+  background-size: cover;
+ }
+
+ .encabezado {
+    padding: 300px 200px;
+    background: url('FabianReportajeLanding.jpg');
+ }
+
+ .contenedor {
+  padding: 200px;
+  background: #fff;
+ }

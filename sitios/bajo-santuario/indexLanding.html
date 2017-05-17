@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Bajo Santuario | Underground Sanctuary</title>
+
+        <link rel="stylesheet" href="assets/css/reveal.css">
+        <link rel="stylesheet" href="assets/css/indexLanding.css">
+
+        <script src='assets/js/jquery.min.js'></script>
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides">
+                <section class="slide-aligned-left" data-background-image="assets/images/landingIndex.jpg">
+                   <h1 class="titulo">Bajo Santuario</h1>
+                    <p class="texto">Cuando una iglesia utiliza la ley<br> como escudo para proteger a sus fieles<br> y resistirse a las políticas del gobierno federal.</p>
+                    <p class="texto">Por: Jesenia De Moya C., Lidia Hernández Tapia y Estefanía Hernández</p>
+                    <a href="#" class="navigate-next" id="comenzar">Deslizar</a>
+                    <div class="fondo"></div>
+                </section>
+
+                <section class="slide-aligned-center" data-background-color="#22264b">
+                    <h1 class="titulo">Bajo Santuario</h1>
+                    <div class="trabajos">
+                        <div class="trabajoImagen"><img src="assets/images/IglesiaVideoLanding.jpg">
+                        <p class="caption"><a href="video-iglesias-santuario.html">¿Qué son las iglesias santuario?</a></p></div>
+                        <div class="trabajoImagen"><img src="assets/images/HermesSentado.jpg">
+                        <p class="caption"><a href="audioslide-hermes.html">Un padre para Hermes</a></p></div>
+                        <div class="trabajoImagen"><img src="assets/images/FabianReportajeLanding.jpg">
+                        <p class="caption"><a href="reportaje-adopciones.html">La resistencia del Padre Fabián</a></p></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="assets/js/head.min.js"></script>
+        <script src="assets/js/reveal.js"></script>
+        <script>
+
+
+            $(document).ready(function() {
+
+
+
+                // Array para guardar el tiempo en el momento que cambiamos cada slide.
+                // Cada valor en el array esta expresado en segundos acumulados.
+                var tiempoTransicion = [];
+
+
+                // Posición del array tiempoTransicion
+                var marcaActual = 0;
+                // Selecciono el objeto de audio.
+                var entrevista = $('#entrevista');
+                // Extraigo la duración.
+                var duracion = entrevista.prop('duration');
+                // Extraigo la posición actual del audio.
+                var posicion;
+
+                entrevista.controls = false;
+
+
+                // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
+                $('#comenzar').on('click', function() {
+                    entrevista.trigger('play');
+                });
+
+                // Listener o evento que detecta si hubo un cambio en slide.
+                Reveal.addEventListener( 'slidechanged', function(event, setTime) {
+
+                    // Si accidentalmente me cambio de slide sin usar el botón comenzar, entonces ejecuto el audio.
+
+                    // Caso contrario, pongo el audio en pausa y lo vuelvo a cero.
+
+                    if (Reveal.getState().indexh === 0) {
+                        entrevista.trigger('pause');
+                        entrevista.prop('currentTime',0);
+                    } else {
+                        entrevista.trigger('play');
+                    }
+
+                });
+
+
+
+                // Función para ejecutar siguiende slide.
+                function cambiarSlide() {
+                    Reveal.next();
+                    marcaActual += 1;
+                }
+
+                // Listener o evento que extrae el tiempo actual del audio.
+                // Sin función actualmente.
+                entrevista.on('timeupdate', function() {
+
+                    posicion = Math.round(entrevista.prop('currentTime'));
+
+                    console.log(posicion);
+
+
+                    // if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
+                    //     cambiarSlide();
+                    // }
+
+                    if (posicion > 0) {
+                        if (posicion >= tiempoTransicion[marcaActual]) {
+                            cambiarSlide();
+                        }
+                    }
+                });
+
+
+
+            });
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: false,
+                controls: false,
+                center: true,
+                progress: false,
+                width: "100%",
+                height: "100%",
+                margin: 0
+            });
+        </script>
+    </body>
+</html>
