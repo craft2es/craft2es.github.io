@@ -1,22 +1,11 @@
 /**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
- *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
- */
+ * Copyright 2017. Constanza Gallardo, Mónica Cordero and Alma Sacasa. NYCity News Service.
+ * Developed in "Craft 2 in Spanish" course, Spring 2017 semester. CUNY Graduate School of Journalism.
+ **/
 
 
-@fa-font-path:   "../font";
+@fa-font-path: "../font";
 
-/*
-html, body {
-
-  height: 100%;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-
-} */
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600|Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
@@ -35,8 +24,6 @@ body {
 }
 
 /* HEADER */
-
-
 h1 {
   font-size: 5.1rem;
   padding: 0px 10px 0px 10px;
@@ -57,37 +44,17 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 5rem;
-
-}
-
-/*
-a {
-
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-h1:nth-child(1) a {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  -webkit-animation: neon4 0.5s ease-in-out infinite alternate;
-  -moz-animation: neon4 0.5s ease-in-out infinite alternate;
-  animation: neon4 0.5s ease-in-out infinite alternate;
-}
-
-*/
+  }
 
 
 section {
   background-color: white;
-}
+  }
 
 .headertop{
   position: relative;
   height: 80vh;
-}
+  }
 
 
 .main-box {
@@ -108,45 +75,27 @@ section {
  background-repeat: no-repeat;
  background-position: center center;
  background-attachment: fixed;
-}
+  }
 
 /* LA BAJADA */
 .bajada {
-font-family: 'Roboto', sans-serif;
-/*font-family: 'Playfair Display', serif; */
-font-size: 1.2rem;
-/*margin-bottom: 50px; */
-margin-top: -20px;
-color: white;
-padding: 0px 200px 0px 200px;
-text-align: center;
-
-}
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Playfair Display', serif; */
+  font-size: 1.2rem;
+  /*margin-bottom: 50px; */
+  margin-top: -20px;
+  color: white;
+  padding: 0px 200px 0px 200px;
+  text-align: center;
+  }
 
 .byline {
- font-style: italic;
-font-family: 'Roboto', sans-serif;
-font-size: 1rem;
-font-weight: 300;
-color: white;
-
- }
-
-
-/*
-.head-img {
-  position: fixed;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  top: 0;
-} */
-
-
-
-
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  }
 
 @-webkit-keyframes neon4 {
   from {
@@ -181,7 +130,7 @@ color: white;
   }
 }
 
-/* CUERPO DEL TEXTO CON ELEMENTOS */
+/* BODY TEXT WITH ELEMENTS - CUERPO DEL TEXTO CON ELEMENTOS */
 
 .texto {
   padding: 30px 340px 30px 340px;
@@ -190,84 +139,43 @@ color: white;
   font-size: 1.1rem;
   color: black;
   line-height: 1.6rem;
+  }
 
-}
 
-/*
-.subtitulo {
-font-family: "Circular";
-font-style: normal;
-font-weight: 800;
-font-size: 40px;
-padding-top: 40px;
-padding-bottom: 10px;
-color: #cf2626;
-
-} */
-
-/* DIV DE CITAS */
+/* QUOTES DIV - DIV DE CITAS */
 .cita1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 400;
+  position: relative;
+  float: right;
+  margin: 0px -200px 0px 30px;
+  text-align: center; /* centrado o no? */
+  }
 
-   font-family: 'Roboto', sans-serif;
-   font-size: 2em;
-   line-height: 1em;
-   font-weight: 400;
-   position: relative;
-   float: right;
-   margin: 0px -200px 0px 30px;
-   text-align: center; /* centrado o no? */
-}
-
-
-/*
-.cita2 {
-font-family: sans-serif;
-   font-size: 2em;
-   line-height: 1em;
-   font-weight: bold;
-   position: relative;
-   float: left;
-   margin: 0px 30px 0px -280px;
-   text-align: center;
-
-} */
 
 .svg {
-width: 180px;
-height: 210px;
-margin-left: 5px;
-margin-bottom: -90px;
-color: #AEFF14;
+  width: 180px;
+  height: 210px;
+  margin-left: 5px;
+  margin-bottom: -90px;
+  color: #AEFF14;
+  }
 
-}
-
-  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO SE VE BIEN
-
-div.cita1 :hover {
-  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
-  animation: neon4 1.5s ease-in-out infinite alternate;
-} */
-
-/* NO FUNCIONO EL HOVER EN EL MALETIN */
-
+/* SVG ICON ON HOVER */
 div.svg :hover {
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
-}
+  }
 
-
- /* FOTOS CON CAPTIONS Y FILTROS    */
-
-
+/* PHOTOS WITH CAPTIONS AND FILTERS - FOTOS CON CAPTIONS Y FILTROS */
 img {
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px;
-}
-
-/* FALTA DARLE ESTILO QUE FUNCIONE A LOS CAPTIONS */
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  }
 
 figcaption {
   padding: 0px 10px 0px 20px;
@@ -276,10 +184,9 @@ figcaption {
   font-size: 0.8em;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  }
 
-}
-
-/* pie de fotos de ramos al final */
+/* FINAL CAPTION FOR RAMOS IMG */
 .pie {
 clear: both;
 font-family: 'Roboto', sans-serif;
@@ -290,190 +197,142 @@ font-family: 'Roboto', sans-serif;
 -webkit-filter: saturate(2.5);
 }
 
-
-/*Filter styles que podemos usar y jugar
-.saturate {-webkit-filter: saturate(3);}
-.grayscale {-webkit-filter: grayscale(100%);}
-.contrast {-webkit-filter: contrast(160%);}
-.brightness {-webkit-filter: brightness(0.25);}
-.blur {-webkit-filter: blur(3px);}
-.invert {-webkit-filter: invert(100%);}
-.sepia {-webkit-filter: sepia(100%);}
-.huerotate {-webkit-filter: hue-rotate(180deg);}
-.opacity {-webkit-filter: opacity(50%);}
-*/
-
-/* AUDIOGRAM  */
-
+/* ASIDE AUDIOGRAM  */
 .audiogram-bella {
- position: relative;
-float: right;
-margin: 0px -100px 0px 30px;
-
- }
-
- .audiotext{
-font-family: 'Roboto', sans-serif;
-
-text-align: center;
-font-size: 1em;
-font-weight: 400;
-margin-bottom: 0;
-
+  position: relative;
+  float: right;
+  margin: 0px -100px 0px 30px;
   }
 
+.audiotext {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 0;
+  }
 
 .controls {
   position: relative;
-
   }
 
 
-/* BILLETE */
-
+/* SVG DOLLAR BILL ICON */
 .icono {
-    text-align: center;
-
-}
-
+  text-align: center;
+  }
 
 /* VIDEO VIMEO */
-
 .videovimeo iframe {
-    display: block;
-    width: 960px;
-    height: 540px;
-    margin: 50px 150px 50px 150px;
-    padding-top: 60px;
+  display: block;
+  width: 960px;
+  height: 540px;
+  margin: 50px 150px 50px 150px;
+  padding-top: 60px;
+  }
 
-}
-
-
-
-
-
-/* VIDEO DE LEGEND
-
- .legend {
- position: relative;
- float: left;
-margin: 10px 50px 10px -180px;
- }  */
-
-/* BLOCKQUOTES CON CIFRAS */
-
+/* BLOCKQUOTES WITH NUMBERS - CON CIFRAS */
 .quote .numero {
   display: block;
   font-size: 6em;
   padding: 55px 0 65px 0;
   font-family: 'Roboto', sans-serif;
-
-}
+  }
 
 .quote-left {
   float: left;
   margin-left: -180px;
   margin-right: 30px;
   font-family: 'Roboto', sans-serif;
-   font-size: 1.9em;
-   line-height: 1.2em;
-   font-weight: 700;
-   text-align: center;
-border-top-style: solid;
-border-bottom-style: solid;
-border-width: medium;
-margin-bottom: 30px;
-padding-top: 50px;
-padding-bottom: 50px;
-border-color: #1CB200;
-/*border-color: #87FF14; */
-}
+  font-size: 1.9em;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: medium;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: #1CB200;
+  /*border-color: #87FF14; */
+  }
 
 /* FOOTER */
 
-footer{
+footer {
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0;
+  }
 
-   color: black;
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-   padding: 50px 0;
+.nyc {
+  width: 30%;
+  height: auto;
+  }
 
-}
-
-.nyc{
-width: 30%;
-height: auto;
- }
-
- .nyctexto {
-
+.nyctexto {
   font-size: 1rem;
-line-height: 1.5rem;
-margin: 50px 180px 50px 180px;
+  line-height: 1.5rem;
+  margin: 50px 180px 50px 180px;
+  }
 
- }
-
- .menu-footer {
+.menu-footer {
   font-size: 1.5em;
   padding-top: 20px;
   color: white;
-
- }
-
- nav ul{
-list-style: none;
-color: white;
   }
 
-/* unvisited link --- NO FUNCIONO EL COLOR?!?!? */
+nav ul {
+  list-style: none;
+  color: white;
+  }
+
+/* LINKS */
+
+/* UNVISITED LINK */
 a:link {
-    color: #1CB200;
+  color: #1CB200;
+  }
 
-}
-
-/* visited link */
+/* VISITED LINK */
 a:visited {
   color: #1CB200;
-  text-decoration: underline;}
+  text-decoration: underline;
+  }
 
-/* selected link */
+/* SELECTED LINK */
  a:active {
-    color: #1CB200;
-        text-decoration: underline;
-}
+  color: #1CB200;
+  text-decoration: underline;
+  }
 
-/* mouse over link */
+/* MOUSE OVER LINK */
 a:hover {
-    color: #1CB200;
-        text-decoration: underline;
-}
+  color: #1CB200;
+  text-decoration: underline;
+  }
 
-
-
-
-
- /* Mobile */
+/* MOBILE */
 @media only screen and (min-width : 320px) {
 
-
-  .headertop{
+  .headertop {
    top: 0;
-
-
    }
 
-   h1 {
-     position: absolute;
-     bottom: 180px;
-     left: 0;
-     right: 0;
-     margin-top: 0px;
-     font-size: 2.5rem;
-     line-height: 2.6rem;
-     padding: 0px 10px 0px 10px;
+    h1 {
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    padding: 0px 10px 0px 10px;
    }
 
-   .bajada {
+    .bajada {
      position: absolute;
      left: 0;
      right: 0;
@@ -483,36 +342,23 @@ a:hover {
      margin-top: 0px;
    }
 
-   .hide-mb {
+    .hide-mb {
     display: none;
    }
 
-/*    h1{
-   padding: 50px 30px;
-    font-size: 2.3em;
-    line-height: 2rem;
-    text-align: left;
-
-  }
-
-    .bajada{
-      font-size: 1em;
-padding: 50px 50px;
-     } */
-
-  .texto {
+    .texto {
     padding: 50px 30px 50px 30px;
   }
 
 
-  .quote-left {
+    .quote-left {
     float: none;
     margin-left: 0;
     margin-right: 0;
     font-size: 1.5rem;
   }
 
-  .cita1 {
+    .cita1 {
     float: none;
     margin-right: 0;
     font-weight: 400;
@@ -520,25 +366,22 @@ padding: 50px 50px;
     padding-right: 30px;
   }
 
-.audiogram-bella{
-float: none;
-
- }
+    .audiogram-bella {
+    float: none;
+  }
 
 }
 
-
-
-
-/* Medium Devices, Desktops */
+/* MEDIAQUERIES MEDIUM DEVICES, DESKTOP */
 @media only screen and (min-width : 970px) {
+
   .headertop {
-      padding: 60px;
-      font-size: 3rem;
+    padding: 60px;
+    font-size: 3rem;
   }
 
   .hide-mb {
-   display: block;
+    display: block;
   }
 
   h1 {
@@ -553,7 +396,6 @@ float: none;
   }
 
   .bajada {
-  
     position: absolute;
     text-align: center;
     bottom: 7px;
@@ -562,39 +404,11 @@ float: none;
     margin-top: 0;
   }
 
-  /*
-
-  h1 {
-    position: absolute;
-    bottom: 260px;
-    left: 0;
-    right: 0;
-    margin-top: 0px;
-    font-size: 7.2rem;
-    line-height: 7rem;
-    padding: 0px 10px 0px 10px;
-
-  }
-
-  .bajada {
-    position: absolute;
-    bottom: 10px;
-    font-size: 1.7rem;
-    padding: 0 300px 0 300px;
-    margin-top: 0;
-  } */
-
   .texto {
       /* padding: 20px 280px 280px; */
       padding: 60px 25% 30px 25%;
   }
   
-
-  /*h1 {
-    font-size: 2.5em;
-    text-align: center;
-  } */
-
   .quote-left {
     font-size: 2rem;
     font-weight: 400;
@@ -609,13 +423,15 @@ float: none;
     font-size: 2.3rem;
     font-weight: 400;
   }
-.audiogram-bella { 
-  float: right;
-}
+
+  .audiogram-bella { 
+    float: right;
+  }
 }
 
-/* Large Devices, Wide Screens */
+/* MEDIAQUERIES LARGE DEVICES, WIDE SCREENS */
 @media only screen and (min-width : 1300px) {
+  
   h1 {
     position: absolute;
     bottom: 160px;
@@ -636,13 +452,11 @@ float: none;
   }
 
   .byline {
-
     font-size: 1.5rem;
-
-   }
+  }
 
   .texto {
-   padding: 30px 20% 30px 20%;
+    padding: 30px 20% 30px 20%;
   }
 
   .cita1 {
@@ -652,17 +466,14 @@ float: none;
   }
 
   .quote-left {
-  float: left;
-  padding-right: 50px;
-
+    float: left;
+    padding-right: 50px;
    } 
-
-
 
 }
 
 
-/* menu */
+/* MENU */
 
 .language {
   position: absolute;
@@ -693,149 +504,31 @@ float: none;
 
 /* ABOUT PAGE */
 
-
-
 .headerabout {
- margin: 0px 500px 50px 300px;
- color: black;
- font-family: font-family: 'Roboto', sans-serif;
+  margin: 0px 500px 50px 300px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 7.5rem;
   text-align: center;
-
  }
 
 .about {
   color: black;
-  padding:  0px 300px 10px 50px;
+  padding: 0px 300px 10px 50px;
   font-size: 1.5rem;
-   font-family: 'Playfair Display', serif;
-
-
+  font-family: 'Playfair Display', serif;
  }
 
- .foto-about{
-    width: 70%;
-    height: auto;
-   float: right;
-   position: relative;
-   padding-left: 1100px;
-   right: 10px;
-  }
-
-
-
-/*ARREGLAR ESTO PARA QUE BRILLE
-.quote .numero  a {
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
-  animation: neon4 1.5s ease-in-out infinite alternate;
+.foto-about {
+  width: 70%;
+  height: auto;
+  float: right;
+  position: relative;
+  padding-left: 1100px;
+  right: 10px;
 }
 
-*/
-
-
-
-
-
-
-/* TIPO DE FONT PARA LOS TITULOS */
-
-/* @font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-src:url('fonts/circular-light.woff2') format('woff2'),
-    url('fonts/circular-light.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 400;
-src:url('fonts/circular-book.woff2') format('woff2'),
-    url('fonts/circular-book.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 600;
-src:url('fonts/circular-medium.woff2') format('woff2'),
-    url('fonts/circular-medium.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 800;
-src:url('fonts/circular-bold.woff2') format('woff2'),
-    url('fonts/circular-bold.woff') format('woff');
-}
- */
-
-
-
-/* ESTO ES PARA PONER UN BORDE PARA LAS CIFRAS *****
-border-top-style: solid;
-border-bottom-style: solid;
-border-width: medium;
-margin-bottom: 50px;
-padding-top: 50px;
-padding-bottom: 50px;
-line-height: 25px;
-*/
-
-
-/* BLOCKQUOTE PARA LAS CITAS CON ICONO */
- /*
-blockquote {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 30px;
-    font-family: "Circular";
-   font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-} */
-
-/* h1:nth-child(1) a:hover {
-  color: #FF1177;
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}  */
-
-
- /* COLOR ROSA NEON
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177,
-    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177,
-    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}
-
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177,
-    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177,
-    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}   */
-
-/* COLOR VERDE NEON */
 
 
 
